@@ -6,7 +6,7 @@ import sys
 con = None
 
 try:
-    con = psycopg2.connect("host='localhost' dbname='postgres' user='postgres' password='tmac1966'")
+    con = psycopg2.connect("host='localhost' dbname='postgres' user='postgres' password='--------'")
     cur = con.cursor()
     cur.execute("CREATE TABLE py_Customers (cid SERIAL PRIMARY KEY, cname varchar(40), address varchar(80), age integer check (age >= 18 and age <= 100), income_level numeric(10,2), username varchar(20), pass_word varchar(20));")
     cur.execute("CREATE TABLE py_Publisher (publisherid varchar(40) primary key, name varchar(40), address varchar(40), discount numeric(4,2) check (discount >= 1.00 and discount <= 10.00));")
