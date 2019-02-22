@@ -1,9 +1,9 @@
 # python_psql
 Python PSQL project
 
-Continuation of database project I did for CECS535 class at the University Louisville.  A .pdf of the project is attached to my LinkedIn profile - www.linkedin.com/in/WendellMooreJr.  
+Continuation of database project I did for CECS535 class at the University Louisville.  A .pdf of the project is attached to my LinkedIn profile - www.linkedin.com/in/WendellMooreJr.  Documentation from that project are included below.  
 
-This project was done using PgAdmin and Visual Studio Code as the editor.
+This project was done using PgAdmin with Visual Studio Code as the editor.
 
 List of .py files:
 1.  create_table.py
@@ -14,3 +14,7 @@ Creates the following tables:
 - Orders, with attributes ordernum, cid, cardnum, cardmonth, cardyear, order date, ship date, where ordernum is a key and should be system generated, and cid is a foreign key. 
 - OrderList, with attributes ordernum, isbn, quantity, where (ordernum, isbn) is the primary key and both ordernum and isbn are foreign keys. 
 - StockManager, with attributes isbn, quantity, where isbn is both a primary key and a foreign key. 
+
+Add as much as you can of the following information to the database schema using checks, assertions or triggers (you can modify tables if already created to add a check). (a) All customer ages should be between 18 and 100. (b) All publisher discounts should be between 1.00 and 10.00 (c) All cardyear values should be greater than 2010. (d) Each ship date should be later (temporarily) than the respective order date. (e) Each book price should be higher than the respective cost. Both price and cost should be greater than zero. 
+
+2. 
