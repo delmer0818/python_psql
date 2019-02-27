@@ -14,7 +14,7 @@ con = None
 
 try:
     
-	con = psycopg2.connect("host='localhost' dbname='postgres' user='postgres' password='tmac1966'")
+	con = psycopg2.connect("host='localhost' dbname='postgres' user='postgres' password='--------'")
     
 	cur = con.cursor()
     
